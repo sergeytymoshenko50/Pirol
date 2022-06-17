@@ -1,0 +1,88 @@
+.project {
+    background: $gray;
+    display: flex;
+    justify-content: center;
+    color: $font-color;
+    .pro-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px 20px 20px;
+        max-width: 1366px;
+        width: 100%;
+        .project__title {
+            color: $dark-gray
+        }
+        .project__text {
+            max-width: 500px;
+            text-align: center;
+        }
+        .project__form {
+            max-width: 674px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input {
+                border: none;
+                padding: 10px;
+                margin-bottom: 20px;
+                width: 100%;
+                border-radius: 3px;            
+            }
+            textarea {
+                padding: 10px;
+                border: none;
+                border-radius: 3px;
+                width: 100%;
+            }
+            .comment {
+                height: 170px;
+                
+            }
+            .short {
+                width: 100%;
+            }
+            button {            
+                background: $blue;
+                color: white;
+                height: 55px;
+                width: 180px;
+                align-items: center;
+                display: flex;
+                text-transform: uppercase;
+                justify-content: center;
+                border: none;
+                margin-top: 40px;
+                border-radius: 3px;
+                &:hover {
+                    box-shadow: 0 0 10px rgba(0,0,0,0.3) ;
+                }                                  
+            }          
+        }
+    }
+}
+
+//from 1000px
+@media (min-width: 1000px) {
+    .project {
+        .pro-wrap {
+            padding: 100px 0;
+            .project__form {
+                max-width: 674px;
+                width: 100%;    
+                flex-direction: row;           
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .short {
+                    width: 310px;
+                }
+                textarea {
+                    padding: 10px;
+                    border: none;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}

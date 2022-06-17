@@ -1,0 +1,51 @@
+.blueline {
+    display: flex;
+    justify-content: center;
+    background: $blue;
+    color: white;    
+    text-transform: uppercase;    
+    .bl-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;        
+        max-width: 1366px;
+        width: 100%;
+        .bl-bloks {
+            display: flex;
+            align-items: center;
+            width: 350px;
+            margin-left: 50px;
+            .bb-text {
+                line-height: .5;
+                margin-left: 28px;
+            }
+        }
+    }
+}
+
+//from 1000px 
+@media (min-width: 1000px) {
+    .blueline {
+        padding: 100px;
+        .bl-wrap {            
+            justify-content: space-around;
+            .bl-bloks {
+                margin-left: 0;
+                
+                .bb-text {
+                    margin-left: 28px;
+                }
+            }
+        }
+    }
+}
+
+//from 1200px 
+@media (min-width: 1200px) {
+    .blueline {
+        .bl-wrap {
+            flex-wrap: nowrap;
+        }
+    }
+}
+

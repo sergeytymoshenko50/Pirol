@@ -1,0 +1,39 @@
+.clients {
+    display: flex;
+    justify-content: center;    
+    .clients__wrap {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 14px;
+        max-width: 1366px;
+        width: 100%;
+        height: 70px;
+        img {
+            position: absolute;
+            opacity: 0;
+            z-index: 1;            
+        }
+        
+        .c-active {
+            transition: 2s;
+            opacity: 1;
+            z-index: 2;
+        }
+    }
+}
+
+//from 1000px 
+@media (min-width: 1000px) {
+    .clients {
+        .clients__wrap {
+            justify-content: space-between;
+            padding: 43px 130px;
+            img {
+                position: relative;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.services {
+    display: flex;
+    justify-content: center;    
+    background: $gray;   
+   .serv__wrap {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        max-width: 1366px;
+        width: 100%;        
+        padding: 100px 100px 240px 100px;
+        .serv__blok {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            max-width: 240px;
+            align-items: center;
+            text-align: center;
+            color: $font-color;
+            margin-bottom: 63px;
+            opacity: 0;
+            transition: 1s;
+
+            .blok-img {
+                margin-bottom: 30px;
+            }
+            
+            .blok-title {
+                color: $dark-gray;
+                text-transform: uppercase;
+                margin-bottom: 19px;
+            }
+        }
+        .s-active {
+            transition: 1s;
+            opacity: 1;
+        }
+    }    
+}
+
+
+@media (min-width: 1000px) {
+    .services {
+        .serv__wrap {
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 100px 100px 27px 100px;
+            .serv__blok {
+                position: relative;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.quotes {
+    display: flex;
+    justify-content: center;
+    background: $blue;
+    color: white;     
+    padding: 0 20px;  
+    .quotes__wrap {
+        max-width: 1366px;
+        width: 100%;
+        .quotes__container {
+            position: relative;
+            display: flex;
+            justify-content: center;            
+            max-width: 1366px;
+            width: 100%;
+            height: 300px; 
+            margin-bottom: 30px;                    
+            .container__blok {    
+                position: absolute;
+                max-width: 567px;
+                width: 100%;
+                text-align: center;
+                line-height: 2;
+                font-size: 19px;            
+                background: $blue; 
+                opacity: 0; 
+                .quotes-signature {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }            
+            }
+            .q-active {
+                transition: 1s;
+                opacity: 1;
+            }
+        }
+        .qoutes__points {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1366px;
+            width: 100%;
+            padding-bottom: 30px;
+            .quote-point {
+                width: 6px;
+                height: 6px;
+                background: white;
+                opacity: .5;
+                margin-right: 10px;
+                border-radius: 10px;
+            }
+            .point-active {
+                width: 12px;
+                height: 12px;
+                opacity: 1;
+                                
+            }
+        }
+    }
+}
+
+//from 1000px
+@media (min-width: 1000px) {
+    .quotes {
+        padding: 0;
+        .quotes__container {
+           
+            .container__blok {
+                position: absolute;
+                text-align: center;
+                line-height: 2;
+                font-size: 19px;                
+                background: $blue;               
+            }            
+        }
+        .quote-point {
+            margin-bottom: 60px;
+        }
+    }
+}

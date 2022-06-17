@@ -1,0 +1,26 @@
+.about {
+    text-align: center;
+    padding: 0 20px;
+    .about__title {
+        font-family: $h2;
+        color: $dark-gray;
+        text-transform: capitalize;
+        margin-top: 105px;
+    }
+    .about__disc {
+        max-width: 580px;
+        color: $font-color;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    img {
+        margin-bottom: 100px;
+    }
+}
+
+//from 1000px and higher
+@media (min-width: 1000px) {
+    .about {
+        padding: 0;
+    }
+}

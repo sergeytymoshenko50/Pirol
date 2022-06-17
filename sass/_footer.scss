@@ -1,0 +1,109 @@
+.footer {
+    background: #000;
+    color: white;
+    padding: 0 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    
+    .footer-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1366px;
+        width: 100%;  
+             
+        a {
+            text-decoration: none;
+            color: white;
+            text-transform: capitalize;
+            &:hover {
+               opacity: .7;
+            }
+        }
+        li {
+            list-style: none;
+            
+        }    
+        .footer__design {
+            text-transform: capitalize;
+            order: 4;
+          
+        }
+        .footer__nav {
+            display: flex;
+            justify-content: space-around; 
+            order: 2; 
+            .nav-left {
+                ul{
+                    padding: 0;
+                }
+            }     
+        }
+        .footer__social {
+            order: 1;
+            ul {
+                display: flex;
+                padding: 0;
+                &:first-child {
+                    margin-left: 0;
+                }
+                li {
+                    margin-left: 10px;
+                }
+                
+            }
+            
+
+        }
+        .footer__contacts {
+            order: 3;
+        }
+    }
+}
+
+//from 1000px
+@media (min-width: 1000px) {
+    .footer {
+        padding: 100px 126px 100px 100px;
+        .footer-wrap {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;            
+            .footer__design {
+                order: 1;              
+            }
+            .footer__nav {
+                order: 3; 
+
+            }
+            .footer__social {
+                order: 4;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    li {
+                        margin-left: 0;
+                    }                    
+                }
+            }
+            .footer__contacts {
+                order: 2;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .footer {
+        .footer-wrap {
+            text-align: center; 
+            .basis {
+                max-width: 290px;
+                width: 100%;
+            }
+        }
+    }
+}

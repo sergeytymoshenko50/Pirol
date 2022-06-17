@@ -1,0 +1,24 @@
+@import "header";
+@import "about";
+@import "profskills";
+@import "blueline";
+@import "works";
+@import "process";
+@import "services";
+@import "quotes";
+@import "clients";
+@import "project";
+@import "footer";
+html {
+    scroll-behavior: smooth;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Nunito Sans';
+    a {
+        text-decoration: none;
+    }
+}
+
+
